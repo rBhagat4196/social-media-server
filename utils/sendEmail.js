@@ -69,7 +69,7 @@ export const sendVerificationEmail = async (user, res) => {
               "Verification email is sent to your account . Vheck your mail for verification",
           });
         })
-        .catch((e) => {
+        .catch((error) => {
           console.log(error);
           res.status(404).json({ message: error.message });
         });
